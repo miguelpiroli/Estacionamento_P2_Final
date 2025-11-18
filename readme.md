@@ -4,6 +4,10 @@ Projeto acadêmico desenvolvido em PHP 8+, aplicando SOLID, DRY, KISS, Object Ca
 arquitetura em camadas Domain / Application / Infra.
 Este sistema simula a gestão completa de um estacionamento, incluindo registros, cálculo de tarifas e relatórios.
 
+/
+/
+/
+/
 
 *Objetivo do Projeto*
 Criar um sistema simples, modular e escalável que permita:
@@ -18,9 +22,13 @@ Criar um sistema simples, modular e escalável que permita:
 
 -Gerar relatórios completos de uso e faturamento
 
--Utilizar boas práticas de engenharia de software
+-Utilizar oas práticas de engenharia de software
 
-  
+/
+/
+/
+/
+
 *Regras de Negócio*
 Tipos de veículo e tarifas:
 Tipo	Tarifa (por hora)
@@ -44,6 +52,10 @@ Relatório deve exibir:
 
 - Faturamento geral
 
+/
+/
+/
+/
 
  *Arquitetura e Estrutura do Projeto*
 
@@ -94,6 +106,10 @@ Faz o cálculo total do faturamento e quantidade por tipo de veículo.
 
 //Aplica DIP: é a injeção de dependência via repositório//
 
+/
+/
+/
+/
 
  *Domain* 
 É a camada que contém toda a lógica principal do estacionamento.
@@ -127,8 +143,13 @@ tarifaFactory.php
 Retorna a estratégia correta com base no tipo de veículo.
 
  //Aplica OCP: adicionar novo tipo sem alterar código existente//
+ 
+ /
+ /
+ /
+ /
 
- *Infra (Infraestrutura / Banco / Implementações)
+ *Infra*
 Aqui ficam os detalhes concretos do SQLite.
 
 database/
@@ -144,6 +165,11 @@ Classe responsável por criar e retornar a conexão PDO.
 
 //Esta camada conhece detalhes do banco, mas o restante do sistema não conhece SQLite, cumprindo DIP perfeitamente//
 
+/
+/
+/
+/
+
 *Arquivos Externos Importantes*
 setup_database.php
 Script que cria e configura o banco de dados SQLite.
@@ -154,6 +180,10 @@ Define autoload PSR-4 e dependências do projeto.
 public/
 Contém os arquivos acessados pelo navegador (HTML,forms...).
 
+/
+/
+/
+/
 
 *Instalação e Execução*
 1- Instalar dependências
@@ -165,7 +195,6 @@ Execute o script:
 
 php setup_database.php
 
-
 Esse script cria o arquivo:
 
 database.sqlite
@@ -173,6 +202,10 @@ database.sqlite
 3- Iniciar servidor local
 php -S localhost:8000 -t public
 
+/
+/
+/
+/
 
 *Acesse:*
 
@@ -189,4 +222,5 @@ php -S localhost:8000 -t public
 -Valor total recebido
 
 -Quantidade total de veículos.
+
 
