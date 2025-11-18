@@ -155,8 +155,7 @@ public/
 Contém os arquivos acessados pelo navegador (HTML,forms...).
 
 
-
-⚙️ Instalação e Execução
+*Instalação e Execução*
 1- Instalar dependências
 composer install
 
@@ -190,3 +189,4 @@ php -S localhost:8000 -t public
 -Valor total recebido
 
 -Quantidade total de veículos.
+
