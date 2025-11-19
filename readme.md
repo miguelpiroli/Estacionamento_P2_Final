@@ -1,3 +1,7 @@
+## Integrantes 
+Miguel Pires - 1999181
+Cristhian Heber - 2019595
+
 ## Sistema de Controle de Estacionamento
 
 Projeto acadêmico desenvolvido em PHP 8+, aplicando SOLID, DRY, KISS, Object Calisthenics, padrões PSR-12 e
@@ -211,6 +215,7 @@ php -S localhost:8000 -t public
 ![Imagem do WhatsApp de 2025-11-17 à(s) 21 44 40_ef53121e](https://github.com/user-attachments/assets/25544f86-bb35-4bf5-b77f-4f7ad6b3b2bb)
 ## Atualização de faturamento
 ![Imagem do WhatsApp de 2025-11-17 à(s) 21 44 41_80bc5e56](https://github.com/user-attachments/assets/b4f6ccd2-c600-4e08-98eb-52784a634646)
+
 
 
 
