@@ -1,15 +1,15 @@
-## Integrantes 
+# Integrantes 
 Miguel Pires - 1999181
 Cristhian Heber - 2019595
 
-## Sistema de Controle de Estacionamento
+# Sistema de Controle de Estacionamento
 
 Projeto acadêmico desenvolvido em PHP 8+, aplicando SOLID, DRY, KISS, Object Calisthenics, padrões PSR-12 e
 arquitetura em camadas Domain / Application / Infra.
 Este sistema simula a gestão completa de um estacionamento, incluindo registros, cálculo de tarifas e relatórios.
 
 
-## Objetivo do Projeto
+# Objetivo do Projeto
 Criar um sistema simples, modular e escalável que permita:
 
 -Registrar entrada de veículos
@@ -25,7 +25,7 @@ Criar um sistema simples, modular e escalável que permita:
 -Utilizar oas práticas de engenharia de software
 
 
-## Regras de Negócio
+# Regras de Negócio
 Tipos de veículo e tarifas:
 Tipo	Tarifa (por hora)
 Carro	R$ 5/h
@@ -48,7 +48,7 @@ Relatório deve exibir:
 
 - Faturamento geral
 
- ## Arquitetura e Estrutura do Projeto ##
+ # Arquitetura e Estrutura do Projeto #
 
 O projeto foi desenvolvido utilizando uma arquitetura limpa e modular, dividida em camadas bem definidas.
 ---
@@ -84,9 +84,9 @@ src/
 ```
 
 ---
- ## Descrição das Camadas
+ # Descrição das Camadas
  
-*Application* 
+## *Application* 
 Aqui ficam os serviços responsáveis por orquestrar ações do sistema:
 
 services/
@@ -103,7 +103,7 @@ Faz o cálculo total do faturamento e quantidade por tipo de veículo.
 
 Aplica DIP: é a injeção de dependência via repositório//
 
- *Domain*
+ ## *Domain*
 É a camada que contém toda a lógica principal do estacionamento.
 
 Interfaces/
@@ -139,7 +139,7 @@ Retorna a estratégia correta com base no tipo de veículo.
  Aplica OCP: adicionar novo tipo sem alterar código existente//
  
 
- *Infra*
+## *Infra*
 Aqui ficam os detalhes concretos do SQLite.
 
 database/
@@ -203,7 +203,7 @@ php -S localhost:8000 -t public
 -Quantidade total de veículos.
 
 
-## Prints de Funcionamento
+# Prints de Funcionamento
 
 ## Registrar entrada de um veiculo
 ![Imagem do WhatsApp de 2025-11-17 à(s) 21 44 40_903e1818](https://github.com/user-attachments/assets/a6cf3874-c23b-4637-810d-711be4f5776e)
@@ -215,6 +215,7 @@ php -S localhost:8000 -t public
 ![Imagem do WhatsApp de 2025-11-17 à(s) 21 44 40_ef53121e](https://github.com/user-attachments/assets/25544f86-bb35-4bf5-b77f-4f7ad6b3b2bb)
 ## Atualização de faturamento
 ![Imagem do WhatsApp de 2025-11-17 à(s) 21 44 41_80bc5e56](https://github.com/user-attachments/assets/b4f6ccd2-c600-4e08-98eb-52784a634646)
+
 
 
 
